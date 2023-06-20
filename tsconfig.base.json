@@ -14,7 +14,14 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@ecommerce-app-1/common-components": [
+        "libs/common-components/src/index.ts"
+      ],
+      "@ecommerce-app-1/common-core": ["libs/common-core/src/index.ts"],
+      "@ecommerce-app-1/common-hooks": ["libs/common-hooks/src/index.ts"],
+      "@ecommerce-app-1/common-utils": ["libs/common-utils/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
