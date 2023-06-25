@@ -1,14 +1,8 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './App.module.scss';
-
-import NxWelcome from './nx-welcome';
+import { Routing } from '@common-core';
+import { Routes } from 'apps/airnbnb-clone/src/app/Core/Routing';
 
 export function App() {
-  return (
-    <div>
-      <NxWelcome title="airnbnb-clone" />
-    </div>
-  );
+  return <Routing isAuthenticated userPermissions={[]} routes={Routes} />;
 }
 
 export default App;

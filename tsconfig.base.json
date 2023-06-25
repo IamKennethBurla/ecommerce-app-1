@@ -1,5 +1,5 @@
 {
-  "compileOnSave": false,
+  "compileOnSave": true,
   "compilerOptions": {
     "rootDir": ".",
     "sourceMap": true,
@@ -10,18 +10,39 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": ["es2020", "dom"],
+    "lib": [
+      "es2020",
+      "dom"
+    ],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@ecommerce-app-1/common-components": [
+      // "@airbnb-clone/Core/*": [
+      //   "apps/airbnb-clone/src/app/Core/*"
+      // ],
+      // "@airbnb-clone/Features/*": [
+      //   "apps/airbnb-clone/src/app/Features/*"
+      // ],
+      // "@airbnb-clone/Pages/*": [
+      //   "apps/airnbnb-clone/src/app/Pages/*"
+      // ],
+      "@common-components": [
         "libs/common-components/src/index.ts"
       ],
-      "@ecommerce-app-1/common-core": ["libs/common-core/src/index.ts"],
-      "@ecommerce-app-1/common-hooks": ["libs/common-hooks/src/index.ts"],
-      "@ecommerce-app-1/common-utils": ["libs/common-utils/src/index.ts"]
+      "@common-core": [
+        "libs/common-core/src/index.ts"
+      ],
+      "@common-hooks": [
+        "libs/common-hooks/src/index.ts"
+      ],
+      "@common-utils": [
+        "libs/common-utils/src/index.ts"
+      ]
     }
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
 }
