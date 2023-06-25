@@ -1,7 +1,7 @@
 {
-  "name": "ecommerce-app-1",
+  "name": "airnbnb-clone",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/ecommerce-app-1/src",
+  "sourceRoot": "apps/airnbnb-clone/src",
   "projectType": "application",
   "targets": {
     "build": {
@@ -9,7 +9,7 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "outputPath": "dist/apps/ecommerce-app-1"
+        "outputPath": "dist/apps/airnbnb-clone"
       },
       "configurations": {
         "development": {
@@ -24,15 +24,15 @@
       "executor": "@nx/vite:dev-server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "ecommerce-app-1:build"
+        "buildTarget": "airnbnb-clone:build"
       },
       "configurations": {
         "development": {
-          "buildTarget": "ecommerce-app-1:build:development",
+          "buildTarget": "airnbnb-clone:build:development",
           "hmr": true
         },
         "production": {
-          "buildTarget": "ecommerce-app-1:build:production",
+          "buildTarget": "airnbnb-clone:build:production",
           "hmr": false
         }
       }
@@ -41,36 +41,36 @@
       "executor": "@nx/vite:preview-server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "ecommerce-app-1:build"
+        "buildTarget": "airnbnb-clone:build"
       },
       "configurations": {
         "development": {
-          "buildTarget": "ecommerce-app-1:build:development"
+          "buildTarget": "airnbnb-clone:build:development"
         },
         "production": {
-          "buildTarget": "ecommerce-app-1:build:production"
+          "buildTarget": "airnbnb-clone:build:production"
         }
       }
     },
     "test": {
       "executor": "@nx/vite:test",
-      "outputs": ["coverage/apps/ecommerce-app-1"],
+      "outputs": ["coverage/apps/airnbnb-clone"],
       "options": {
         "passWithNoTests": true,
-        "reportsDirectory": "../../coverage/apps/ecommerce-app-1"
+        "reportsDirectory": "../../coverage/apps/airnbnb-clone"
       }
     },
     "lint": {
       "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/ecommerce-app-1/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["apps/airnbnb-clone/**/*.{ts,tsx,js,jsx}"]
       }
     },
     "serve-static": {
       "executor": "@nx/web:file-server",
       "options": {
-        "buildTarget": "ecommerce-app-1:build"
+        "buildTarget": "airnbnb-clone:build"
       }
     }
   },

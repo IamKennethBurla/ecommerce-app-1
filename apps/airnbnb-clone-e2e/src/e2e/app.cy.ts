@@ -1,6 +1,6 @@
 import { getGreeting } from '../support/app.po';
 
-describe('ecommerce-app-1', () => {
+describe('airnbnb-clone', () => {
   beforeEach(() => cy.visit('/'));
 
   it('should display welcome message', () => {
@@ -8,6 +8,6 @@ describe('ecommerce-app-1', () => {
     cy.login('my-email@something.com', 'myPassword');
 
     // Function helper example, see `../support/app.po.ts` file
-    getGreeting().contains('Welcome ecommerce-app-1');
+    getGreeting().contains('Welcome airnbnb-clone');
   });
 });
