@@ -1,6 +1,6 @@
 export function MainFilter() {
   return (
-    <div className="flex items-center justify-center border-gray-300 border-[.5px] w-[100px] h-[45px] rounded-[15px]">
+    <div className="flex items-center justify-center border-gray-300 border-[.5px] w-[100px] h-[48px] rounded-[15px]">
       <svg
         viewBox="0 0 24 24"
         fill="none"

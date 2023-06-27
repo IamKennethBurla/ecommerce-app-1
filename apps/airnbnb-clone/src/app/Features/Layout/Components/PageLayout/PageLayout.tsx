@@ -10,7 +10,7 @@ export function PageLayout({ withFooter, withHeader, children }: IPageLayout) {
   return (
     <>
       {withHeader && <Header />}
-      <div className="px-10 py-10">{children}</div>
+      <div>{children}</div>
     </>
   );
 }

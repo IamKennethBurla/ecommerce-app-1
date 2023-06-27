@@ -21,8 +21,8 @@ export function RoomCardImageViewer({
 
   return (
     <div>
-      {cardImages.map(({ url, isActive }) => (
-        <img className="h-300 object-cover" src={url} alt="" />
+      {cardImages.map(({ url, isActive }, index) => (
+        <img key={index} className="h-300 object-cover" src={url} alt="" />
       ))}
       <RoomCardImageNav />
       <RoomCardImageNavIndicator />

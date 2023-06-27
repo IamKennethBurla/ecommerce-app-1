@@ -1,8 +1,6 @@
-import { StickyComponentContext } from 'apps/airnbnb-clone/src/app/Core/Context/StickyComponentContext';
+import { StickyComponentContext } from 'apps/airnbnb-clone/src/app/Core/Context';
 import { useContext } from 'react';
 
-const useStickyComponentContext = () => {
+export const useStickyComponent = () => {
   return useContext(StickyComponentContext);
 };
-
-export default useStickyComponentContext;
