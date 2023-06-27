@@ -1,4 +1,4 @@
-import { Header } from 'apps/airnbnb-clone/src/app/Features';
+import { Header } from 'apps/airnbnb-clone/src/app/Features/Layout';
 
 export interface IPageLayout {
   withHeader?: boolean;

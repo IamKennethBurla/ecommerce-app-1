@@ -1,3 +1,2 @@
-export * from "./RoomCard/RoomCard";
-export * from "./RoomList/RoomList";
+export * from "./Components";
 
