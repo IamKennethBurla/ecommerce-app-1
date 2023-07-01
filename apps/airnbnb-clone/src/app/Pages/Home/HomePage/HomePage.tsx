@@ -36,7 +36,7 @@ export function HomePage() {
         )}
       >
         <CategoryFilter />
-        <div className="ml-5 mb-[14px]">
+        <div className={clsx('ml-5 mb-[7px]', showStickyFilter && 'mb-3')}>
           <MainFilter />
         </div>
       </section>
